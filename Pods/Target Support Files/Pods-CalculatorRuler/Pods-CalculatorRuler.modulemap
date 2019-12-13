@@ -1,0 +1,6 @@
+framework module Pods_CalculatorRuler {
+  umbrella header "Pods-CalculatorRuler-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -3,27 +3,73 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		161E6664239E28D2007A7220 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161E6663239E28D2007A7220 /* AppDelegate.swift */; };
-		161E6666239E28D2007A7220 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161E6665239E28D2007A7220 /* SceneDelegate.swift */; };
 		161E6668239E28D2007A7220 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161E6667239E28D2007A7220 /* ViewController.swift */; };
 		161E666B239E28D2007A7220 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 161E6669239E28D2007A7220 /* Main.storyboard */; };
 		161E666D239E28D9007A7220 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 161E666C239E28D9007A7220 /* Assets.xcassets */; };
 		161E6670239E28D9007A7220 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 161E666E239E28D9007A7220 /* LaunchScreen.storyboard */; };
+		161E667A239E2AC3007A7220 /* QNNActionPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161E6678239E2AC3007A7220 /* QNNActionPanelView.swift */; };
+		161E667B239E2AC3007A7220 /* QNNActionSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161E6679239E2AC3007A7220 /* QNNActionSheetView.swift */; };
+		161E6680239E2CAE007A7220 /* UIView+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161E667C239E2CAD007A7220 /* UIView+Animation.swift */; };
+		161E6681239E2CAE007A7220 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161E667D239E2CAD007A7220 /* UIColorExtension.swift */; };
+		161E6682239E2CAE007A7220 /* Float+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161E667E239E2CAE007A7220 /* Float+Extension.swift */; };
+		161E6683239E2CAE007A7220 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161E667F239E2CAE007A7220 /* UIViewExtension.swift */; };
+		161E6685239E2CD6007A7220 /* JOEFitSIze.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161E6684239E2CD5007A7220 /* JOEFitSIze.swift */; };
+		161E6687239E2CF8007A7220 /* JOEConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161E6686239E2CF8007A7220 /* JOEConstant.swift */; };
+		161E668D239E31C7007A7220 /* QNNCalculatorWarningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161E6688239E31C7007A7220 /* QNNCalculatorWarningView.swift */; };
+		161E668E239E31C7007A7220 /* QNNCalculatorMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161E6689239E31C7007A7220 /* QNNCalculatorMessageView.swift */; };
+		161E668F239E31C7007A7220 /* QNNCalculatorParamsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161E668A239E31C7007A7220 /* QNNCalculatorParamsModel.swift */; };
+		161E6690239E31C7007A7220 /* QNNCalculatorRulerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161E668B239E31C7007A7220 /* QNNCalculatorRulerView.swift */; };
+		161E6691239E31C7007A7220 /* QNNCalculatorScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161E668C239E31C7007A7220 /* QNNCalculatorScrollView.swift */; };
+		161E6693239E32E0007A7220 /* QNNNumberTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161E6692239E32E0007A7220 /* QNNNumberTextField.swift */; };
+		161E6695239E345F007A7220 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161E6694239E345F007A7220 /* UIImageExtension.swift */; };
+		161E6697239E5088007A7220 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 161E6696239E5088007A7220 /* data.json */; };
+		161E6699239E56BA007A7220 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161E6698239E56B9007A7220 /* UITextFieldExtension.swift */; };
+		167AE070239E57BB00D0D8B1 /* Reflect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167AE06E239E57BB00D0D8B1 /* Reflect.swift */; };
+		167AE071239E57BB00D0D8B1 /* ReflectJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167AE06F239E57BB00D0D8B1 /* ReflectJson.swift */; };
+		167AE073239E581400D0D8B1 /* LendingProfitsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167AE072239E581400D0D8B1 /* LendingProfitsService.swift */; };
+		167AE075239E587000D0D8B1 /* SQLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167AE074239E587000D0D8B1 /* SQLService.swift */; };
+		167AE077239E58BF00D0D8B1 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167AE076239E58BF00D0D8B1 /* StringExtension.swift */; };
+		EBD4A98FE5952EAADBC33102 /* Pods_CalculatorRuler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37CA28B8A73626AA61E7BDD4 /* Pods_CalculatorRuler.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		100C0E4F09425DA066C09E76 /* Pods-CalculatorRuler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalculatorRuler.release.xcconfig"; path = "Target Support Files/Pods-CalculatorRuler/Pods-CalculatorRuler.release.xcconfig"; sourceTree = "<group>"; };
 		161E6660239E28D2007A7220 /* CalculatorRuler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalculatorRuler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		161E6663239E28D2007A7220 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		161E6665239E28D2007A7220 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		161E6667239E28D2007A7220 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		161E666A239E28D2007A7220 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		161E666C239E28D9007A7220 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		161E666F239E28D9007A7220 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		161E6671239E28D9007A7220 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		161E6678239E2AC3007A7220 /* QNNActionPanelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QNNActionPanelView.swift; sourceTree = "<group>"; };
+		161E6679239E2AC3007A7220 /* QNNActionSheetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QNNActionSheetView.swift; sourceTree = "<group>"; };
+		161E667C239E2CAD007A7220 /* UIView+Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Animation.swift"; sourceTree = "<group>"; };
+		161E667D239E2CAD007A7220 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		161E667E239E2CAE007A7220 /* Float+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Float+Extension.swift"; sourceTree = "<group>"; };
+		161E667F239E2CAE007A7220 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		161E6684239E2CD5007A7220 /* JOEFitSIze.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JOEFitSIze.swift; sourceTree = "<group>"; };
+		161E6686239E2CF8007A7220 /* JOEConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JOEConstant.swift; sourceTree = "<group>"; };
+		161E6688239E31C7007A7220 /* QNNCalculatorWarningView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QNNCalculatorWarningView.swift; sourceTree = "<group>"; };
+		161E6689239E31C7007A7220 /* QNNCalculatorMessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QNNCalculatorMessageView.swift; sourceTree = "<group>"; };
+		161E668A239E31C7007A7220 /* QNNCalculatorParamsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QNNCalculatorParamsModel.swift; sourceTree = "<group>"; };
+		161E668B239E31C7007A7220 /* QNNCalculatorRulerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QNNCalculatorRulerView.swift; sourceTree = "<group>"; };
+		161E668C239E31C7007A7220 /* QNNCalculatorScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QNNCalculatorScrollView.swift; sourceTree = "<group>"; };
+		161E6692239E32E0007A7220 /* QNNNumberTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QNNNumberTextField.swift; sourceTree = "<group>"; };
+		161E6694239E345F007A7220 /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		161E6696239E5088007A7220 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		161E6698239E56B9007A7220 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
+		167AE06E239E57BB00D0D8B1 /* Reflect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reflect.swift; sourceTree = "<group>"; };
+		167AE06F239E57BB00D0D8B1 /* ReflectJson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReflectJson.swift; sourceTree = "<group>"; };
+		167AE072239E581400D0D8B1 /* LendingProfitsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LendingProfitsService.swift; sourceTree = "<group>"; };
+		167AE074239E587000D0D8B1 /* SQLService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLService.swift; sourceTree = "<group>"; };
+		167AE076239E58BF00D0D8B1 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		37CA28B8A73626AA61E7BDD4 /* Pods_CalculatorRuler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalculatorRuler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9516DC9052AE83BD4761B7E /* Pods-CalculatorRuler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalculatorRuler.debug.xcconfig"; path = "Target Support Files/Pods-CalculatorRuler/Pods-CalculatorRuler.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBD4A98FE5952EAADBC33102 /* Pods_CalculatorRuler.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +89,8 @@
 			children = (
 				161E6662239E28D2007A7220 /* CalculatorRuler */,
 				161E6661239E28D2007A7220 /* Products */,
+				AE270CE71A48B886B5700BEC /* Pods */,
+				DF7CB7E5D142699D96AA98A0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,8 +105,9 @@
 		161E6662239E28D2007A7220 /* CalculatorRuler */ = {
 			isa = PBXGroup;
 			children = (
+				167AE06D239E57BB00D0D8B1 /* TTReflect */,
+				161E6677239E2AC3007A7220 /* source */,
 				161E6663239E28D2007A7220 /* AppDelegate.swift */,
-				161E6665239E28D2007A7220 /* SceneDelegate.swift */,
 				161E6667239E28D2007A7220 /* ViewController.swift */,
 				161E6669239E28D2007A7220 /* Main.storyboard */,
 				161E666C239E28D9007A7220 /* Assets.xcassets */,
@@ -67,6 +117,59 @@
 			path = CalculatorRuler;
 			sourceTree = "<group>";
 		};
+		161E6677239E2AC3007A7220 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				161E6686239E2CF8007A7220 /* JOEConstant.swift */,
+				161E6684239E2CD5007A7220 /* JOEFitSIze.swift */,
+				161E667E239E2CAE007A7220 /* Float+Extension.swift */,
+				161E667D239E2CAD007A7220 /* UIColorExtension.swift */,
+				161E667C239E2CAD007A7220 /* UIView+Animation.swift */,
+				161E6698239E56B9007A7220 /* UITextFieldExtension.swift */,
+				167AE076239E58BF00D0D8B1 /* StringExtension.swift */,
+				161E667F239E2CAE007A7220 /* UIViewExtension.swift */,
+				161E6694239E345F007A7220 /* UIImageExtension.swift */,
+				167AE072239E581400D0D8B1 /* LendingProfitsService.swift */,
+				167AE074239E587000D0D8B1 /* SQLService.swift */,
+				161E6678239E2AC3007A7220 /* QNNActionPanelView.swift */,
+				161E6679239E2AC3007A7220 /* QNNActionSheetView.swift */,
+				161E6689239E31C7007A7220 /* QNNCalculatorMessageView.swift */,
+				161E668A239E31C7007A7220 /* QNNCalculatorParamsModel.swift */,
+				161E668B239E31C7007A7220 /* QNNCalculatorRulerView.swift */,
+				161E668C239E31C7007A7220 /* QNNCalculatorScrollView.swift */,
+				161E6688239E31C7007A7220 /* QNNCalculatorWarningView.swift */,
+				161E6692239E32E0007A7220 /* QNNNumberTextField.swift */,
+				161E6696239E5088007A7220 /* data.json */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		167AE06D239E57BB00D0D8B1 /* TTReflect */ = {
+			isa = PBXGroup;
+			children = (
+				167AE06E239E57BB00D0D8B1 /* Reflect.swift */,
+				167AE06F239E57BB00D0D8B1 /* ReflectJson.swift */,
+			);
+			path = TTReflect;
+			sourceTree = "<group>";
+		};
+		AE270CE71A48B886B5700BEC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9516DC9052AE83BD4761B7E /* Pods-CalculatorRuler.debug.xcconfig */,
+				100C0E4F09425DA066C09E76 /* Pods-CalculatorRuler.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DF7CB7E5D142699D96AA98A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37CA28B8A73626AA61E7BDD4 /* Pods_CalculatorRuler.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +177,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 161E6674239E28D9007A7220 /* Build configuration list for PBXNativeTarget "CalculatorRuler" */;
 			buildPhases = (
+				4CDC697A5CF59DAE729B3FD9 /* [CP] Check Pods Manifest.lock */,
 				161E665C239E28D2007A7220 /* Sources */,
 				161E665D239E28D2007A7220 /* Frameworks */,
 				161E665E239E28D2007A7220 /* Resources */,
+				74B0C4A4D596F3FBAEF4B7B4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,19 +233,82 @@
 				161E6670239E28D9007A7220 /* LaunchScreen.storyboard in Resources */,
 				161E666D239E28D9007A7220 /* Assets.xcassets in Resources */,
 				161E666B239E28D2007A7220 /* Main.storyboard in Resources */,
+				161E6697239E5088007A7220 /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4CDC697A5CF59DAE729B3FD9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CalculatorRuler-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74B0C4A4D596F3FBAEF4B7B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CalculatorRuler/Pods-CalculatorRuler-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CalculatorRuler/Pods-CalculatorRuler-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CalculatorRuler/Pods-CalculatorRuler-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		161E665C239E28D2007A7220 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				167AE075239E587000D0D8B1 /* SQLService.swift in Sources */,
+				161E668E239E31C7007A7220 /* QNNCalculatorMessageView.swift in Sources */,
+				161E6699239E56BA007A7220 /* UITextFieldExtension.swift in Sources */,
+				167AE073239E581400D0D8B1 /* LendingProfitsService.swift in Sources */,
+				161E667A239E2AC3007A7220 /* QNNActionPanelView.swift in Sources */,
+				161E6695239E345F007A7220 /* UIImageExtension.swift in Sources */,
+				167AE070239E57BB00D0D8B1 /* Reflect.swift in Sources */,
+				161E6693239E32E0007A7220 /* QNNNumberTextField.swift in Sources */,
 				161E6668239E28D2007A7220 /* ViewController.swift in Sources */,
+				161E6680239E2CAE007A7220 /* UIView+Animation.swift in Sources */,
+				161E668F239E31C7007A7220 /* QNNCalculatorParamsModel.swift in Sources */,
+				161E667B239E2AC3007A7220 /* QNNActionSheetView.swift in Sources */,
 				161E6664239E28D2007A7220 /* AppDelegate.swift in Sources */,
-				161E6666239E28D2007A7220 /* SceneDelegate.swift in Sources */,
+				161E6682239E2CAE007A7220 /* Float+Extension.swift in Sources */,
+				161E6691239E31C7007A7220 /* QNNCalculatorScrollView.swift in Sources */,
+				161E6685239E2CD6007A7220 /* JOEFitSIze.swift in Sources */,
+				161E6683239E2CAE007A7220 /* UIViewExtension.swift in Sources */,
+				167AE071239E57BB00D0D8B1 /* ReflectJson.swift in Sources */,
+				161E668D239E31C7007A7220 /* QNNCalculatorWarningView.swift in Sources */,
+				161E6690239E31C7007A7220 /* QNNCalculatorRulerView.swift in Sources */,
+				161E6687239E2CF8007A7220 /* JOEConstant.swift in Sources */,
+				167AE077239E58BF00D0D8B1 /* StringExtension.swift in Sources */,
+				161E6681239E2CAE007A7220 /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,11 +450,13 @@
 		};
 		161E6675239E28D9007A7220 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9516DC9052AE83BD4761B7E /* Pods-CalculatorRuler.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GZ5C32U7U5;
 				INFOPLIST_FILE = CalculatorRuler/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,11 +470,13 @@
 		};
 		161E6676239E28D9007A7220 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 100C0E4F09425DA066C09E76 /* Pods-CalculatorRuler.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GZ5C32U7U5;
 				INFOPLIST_FILE = CalculatorRuler/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

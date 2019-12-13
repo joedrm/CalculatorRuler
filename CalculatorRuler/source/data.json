@@ -1,0 +1,86 @@
+{
+  "interest_decs": "锁定期30天预计可得利息(元)",
+  "type": 10,
+  "days": 30,
+  "service_fee_rate": "0.00",
+  "interest_formula": "amount * days * 10.00 / 36000",
+  "service_fee_desc": "转让变现手续费",
+  "rate_range": [
+    
+  ],
+  "cal_desc": "",
+  "calculator_title": "利息计算器",
+  "money_title": "出借金额",
+  "money_placeholder": "您想出借多少钱?",
+  "num_counter": {
+    "max_num": 200000,
+    "min_num": 0,
+    "init_num": 10000,
+    "step_num": 100
+  },
+  "rate_message": [
+    {
+      "min": 0,
+      "max": 5,
+      "msg": "呜，利息太少了，多买一点吧"
+    },
+    {
+      "min": 5,
+      "max": 10,
+      "msg": "攒下一顿早餐钱"
+    },
+    {
+      "min": 10,
+      "max": 30,
+      "msg": "订一杯咖啡，提提神"
+    },
+    {
+      "min": 30,
+      "max": 100,
+      "msg": "和朋友约一次下午茶吧"
+    },
+    {
+      "min": 100,
+      "max": 300,
+      "msg": "哇呜，攒下一只大牌口红"
+    },
+    {
+      "min": 300,
+      "max": 500,
+      "msg": "和家人一起吃个饭去～"
+    },
+    {
+      "min": 500,
+      "max": 1000,
+      "msg": "去听个演唱会，再不疯狂就老了"
+    },
+    {
+      "min": 1000,
+      "max": 5000,
+      "msg": "来一场说走就走的旅行"
+    },
+    {
+      "min": 5000,
+      "max": 10000,
+      "msg": "世界那么大，去别的国家看看"
+    },
+    {
+      "min": 10000,
+      "max": 0,
+      "msg": "土豪，我们做朋友吧"
+    }
+  ],
+  "tip_message": "网贷有风险，出借需谨慎",
+  "button_type": {
+    "enable": true,
+    "type": "buy",
+    "text": "确定",
+    "color": "#FF4343",
+    "tips": ""
+  },
+  "sub_title": "出借本金（元）",
+  "pid": "20133",
+  "product_percent": 0.1,
+  "product_year": 360,
+  "min_money": 100
+}
